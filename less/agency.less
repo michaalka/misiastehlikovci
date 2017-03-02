@@ -46,7 +46,7 @@ a.active {
 
 h1, h2, h3, h4, h5, h6 {
     .heading-font;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .img-centered {
@@ -59,6 +59,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .img-shrinked-20 {
     padding: 20% 20% 20% 20%;
+}
+
+.img-20-left {
+    padding: 0 20% 0 0;
+}
+
+.img-20-right {
+    padding: 5% 0 0 20%;
 }
 
 .bg-light-gray {
@@ -175,7 +183,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    background-image: url('../img/header-bg.jpg');
+    background-image: url('../img/header-bg-dark.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -246,7 +254,7 @@ section {
 
 @media(min-width:768px) {
     section {
-        padding: 150px 0;
+        padding: 50px 0;
     }
 }
 
@@ -390,7 +398,7 @@ section {
         .timeline-panel {
             width: 100%;
             float: right;
-            padding: 0 20px 0 100px;
+            padding: 0 20px 0 120px;
             position: relative;
             text-align: left;
             &:before {
@@ -409,8 +417,8 @@ section {
         .timeline-image {
             left: 0;
             margin-left: 0;
-            width: 80px;
-            height: 80px;
+            width: 100px;
+            height: 100px;
             position: absolute;
             z-index: 100;
             background-color: @theme-primary;
@@ -427,7 +435,7 @@ section {
         &.timeline-inverted > .timeline-panel {
             float: right;
             text-align: left;
-            padding: 0 20px 0 100px;
+            padding: 0 20px 0 120px;
             &:before {
                 border-left-width: 0;
                 border-right-width: 15px;
@@ -473,14 +481,14 @@ section {
             .timeline-panel {
                 width: 41%;
                 float: left;
-                padding: 0 20px 20px 30px;
+                padding: 0 50px 20px 30px;
                 text-align: right;
             }
             .timeline-image {
-                width: 100px;
-                height: 100px;
+                width: 200px;
+                height: 200px;
                 left: 50%;
-                margin-left: -50px;
+                margin-left: -100px;
                 h4 {
                     font-size: 13px;
                     margin-top: 16px;
@@ -490,7 +498,7 @@ section {
             &.timeline-inverted > .timeline-panel {
                 float: right;
                 text-align: left;
-                padding: 0 30px 20px 20px;
+                padding: 0 30px 20px 50px;
             }
         }
     }
@@ -501,12 +509,12 @@ section {
         > li {
             min-height: 150px;
             .timeline-panel {
-                padding: 0 20px 20px;
+                padding: 0 70px 20px;
             }
             .timeline-image {
-                width: 150px;
-                height: 150px;
-                margin-left: -75px;
+                width: 250px;
+                height: 250px;
+                margin-left: -125px;
                 h4 {
                     font-size: 18px;
                     margin-top: 30px;
@@ -514,7 +522,7 @@ section {
                 }
             }
             &.timeline-inverted > .timeline-panel {
-                padding: 0 20px 20px;
+                padding: 0 20px 20px 70px;
             }
         }
     }
@@ -549,6 +557,7 @@ section {
     margin-bottom: 50px;
     img {
         margin: 0 auto;
+        max-width: 300px;
         border: 7px solid white;
     }
     h4 {
@@ -761,6 +770,7 @@ ul.social-buttons {
 
 ::selection {
     text-shadow: none;
+    color: white;
     background: @theme-primary;
 }
 

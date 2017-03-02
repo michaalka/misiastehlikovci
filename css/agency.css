@@ -44,7 +44,7 @@ h5,
 h6 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
 }
 .img-centered {
   margin: 0 auto;
@@ -54,6 +54,12 @@ h6 {
 }
 .img-shrinked-20 {
   padding: 20% 20% 20% 20%;
+}
+.img-20-left {
+  padding: 0 20% 0 0;
+}
+.img-20-right {
+  padding: 5% 0 0 20%;
 }
 .bg-light-gray {
   background-color: #eeeeee;
@@ -232,7 +238,7 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url('../img/header-bg.jpg');
+  background-image: url('../img/header-bg-dark.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -301,7 +307,7 @@ section h3.section-subheading {
 }
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    padding: 50px 0;
   }
 }
 .circle {
@@ -424,7 +430,7 @@ section h3.section-subheading {
 .timeline > li .timeline-panel {
   width: 100%;
   float: right;
-  padding: 0 20px 0 100px;
+  padding: 0 20px 0 120px;
   position: relative;
   text-align: left;
 }
@@ -443,8 +449,8 @@ section h3.section-subheading {
 .timeline > li .timeline-image {
   left: 0;
   margin-left: 0;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   position: absolute;
   z-index: 100;
   background-color: #e52b50;
@@ -461,7 +467,7 @@ section h3.section-subheading {
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
   text-align: left;
-  padding: 0 20px 0 100px;
+  padding: 0 20px 0 120px;
 }
 .timeline > li.timeline-inverted > .timeline-panel:before {
   border-left-width: 0;
@@ -500,14 +506,14 @@ section h3.section-subheading {
   .timeline > li .timeline-panel {
     width: 41%;
     float: left;
-    padding: 0 20px 20px 30px;
+    padding: 0 50px 20px 30px;
     text-align: right;
   }
   .timeline > li .timeline-image {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     left: 50%;
-    margin-left: -50px;
+    margin-left: -100px;
   }
   .timeline > li .timeline-image h4 {
     font-size: 13px;
@@ -517,7 +523,7 @@ section h3.section-subheading {
   .timeline > li.timeline-inverted > .timeline-panel {
     float: right;
     text-align: left;
-    padding: 0 30px 20px 20px;
+    padding: 0 30px 20px 50px;
   }
 }
 @media (min-width: 992px) {
@@ -525,12 +531,12 @@ section h3.section-subheading {
     min-height: 150px;
   }
   .timeline > li .timeline-panel {
-    padding: 0 20px 20px;
+    padding: 0 70px 20px;
   }
   .timeline > li .timeline-image {
-    width: 150px;
-    height: 150px;
-    margin-left: -75px;
+    width: 250px;
+    height: 250px;
+    margin-left: -125px;
   }
   .timeline > li .timeline-image h4 {
     font-size: 18px;
@@ -538,7 +544,7 @@ section h3.section-subheading {
     line-height: 26px;
   }
   .timeline > li.timeline-inverted > .timeline-panel {
-    padding: 0 20px 20px;
+    padding: 0 20px 20px 70px;
   }
 }
 @media (min-width: 1200px) {
@@ -566,6 +572,7 @@ section h3.section-subheading {
 }
 .team-member img {
   margin: 0 auto;
+  max-width: 300px;
   border: 7px solid white;
 }
 .team-member h4 {
@@ -761,6 +768,7 @@ ul.social-buttons li a:active {
 }
 ::selection {
   text-shadow: none;
+  color: white;
   background: #e52b50;
 }
 img::selection {
