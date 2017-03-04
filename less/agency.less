@@ -248,7 +248,7 @@ section {
         text-transform: none;
         font-style: italic;
         font-weight: 400;
-        margin-bottom: 75px;
+        margin-bottom: 20px;
     }
 }
 
@@ -338,6 +338,7 @@ section {
         }
         .portfolio-caption {
             max-width: 400px;
+            height: 100%;
             margin: 0 auto;
             background-color: white;
             text-align: center;
@@ -379,14 +380,14 @@ section {
         position: absolute;
         content: "";
         width: 2px;
-        background-color: #f1f1f1;
+        background-color: @gray-light;
         left: 40px;
         margin-left: -1.5px;
     }
     > li {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
         position: relative;
-        min-height: 50px;
+        min-height: 30px;
         &:before,
         &:after {
             content: " ";
@@ -421,10 +422,10 @@ section {
             height: 100px;
             position: absolute;
             z-index: 100;
-            background-color: @theme-primary;
+            background-color: @gray-light;
             color: white;
             border-radius: 100%;
-            border: 7px solid #f1f1f1;
+            border: 2px solid @gray-light;
             text-align: center;
             h4 {
                 font-size: 10px;
@@ -450,7 +451,8 @@ section {
             }
         }
         &:last-child {
-            margin-bottom: 0;
+            padding: 50px 0 0 0;
+            margin-bottom: 10px;
         }
     }
     .timeline-heading {
@@ -476,12 +478,12 @@ section {
             left: 50%;
         }
         > li {
-            margin-bottom: 100px;
-            min-height: 100px;
+            margin-bottom: 20px;
+            min-height: 50px;
             .timeline-panel {
                 width: 41%;
                 float: left;
-                padding: 0 50px 20px 30px;
+                padding: 0 50px 20px 20px;
                 text-align: right;
             }
             .timeline-image {
@@ -498,7 +500,11 @@ section {
             &.timeline-inverted > .timeline-panel {
                 float: right;
                 text-align: left;
-                padding: 0 30px 20px 50px;
+                padding: 0 20px 20px 50px;
+            }
+            &:last-child {
+                padding: 50px 0 0 0;
+                margin-bottom: 100px;
             }
         }
     }
@@ -507,14 +513,14 @@ section {
 @media(min-width:992px) {
     .timeline {
         > li {
-            min-height: 150px;
+            min-height: 100px;
             .timeline-panel {
-                padding: 0 70px 20px;
+                padding: 0 50px 20px 20px;
             }
             .timeline-image {
-                width: 250px;
-                height: 250px;
-                margin-left: -125px;
+                width: 200px;
+                height: 200px;
+                margin-left: -100px;
                 h4 {
                     font-size: 18px;
                     margin-top: 30px;
@@ -522,7 +528,7 @@ section {
                 }
             }
             &.timeline-inverted > .timeline-panel {
-                padding: 0 20px 20px 70px;
+                padding: 0 20px 20px 50px;
             }
         }
     }
@@ -531,14 +537,14 @@ section {
 @media(min-width:1200px) {
     .timeline {
         > li {
-            min-height: 170px;
+            min-height: 150px;
             .timeline-panel {
                 padding: 0 20px 20px 100px;
             }
             .timeline-image {
-                width: 170px;
-                height: 170px;
-                margin-left: -85px;
+                width: 200px;
+                height: 200px;
+                margin-left: -100px;
                 h4 {
                     margin-top: 40px;
                 }
@@ -554,11 +560,11 @@ section {
 
 .team-member {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     img {
         margin: 0 auto;
-        max-width: 300px;
-        border: 7px solid white;
+        max-width: 250px;
+        border: 3px solid @gray-light;
     }
     h4 {
         margin-top: 25px;
@@ -718,6 +724,8 @@ ul.social-buttons {
         }
         img {
             margin-bottom: 30px;
+            max-width: 800px;
+            max-height: 800px;
         }
     }
     .close-modal {

@@ -43,7 +43,7 @@ h4,
 h5,
 h6 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: 600;
 }
 .img-centered {
@@ -72,7 +72,7 @@ h6 {
   background-color: #e52b50;
   border-color: #e52b50;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: 700;
 }
 .btn-primary:hover,
@@ -116,7 +116,7 @@ fieldset[disabled] .btn-primary.active {
   background-color: #e52b50;
   border-color: #e52b50;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: 700;
   border-radius: 3px;
   font-size: 18px;
@@ -179,7 +179,7 @@ fieldset[disabled] .btn-xl.active {
   background-color: #e52b50;
   border-color: #e52b50;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
+  text-transform: none;
   color: white;
   font-size: 12px;
 }
@@ -189,7 +189,7 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .nav li a {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: 400;
   letter-spacing: 1px;
   color: white;
@@ -262,7 +262,7 @@ header .intro-text .intro-lead-in {
 }
 header .intro-text .intro-heading {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: 700;
   font-size: 50px;
   line-height: 50px;
@@ -282,7 +282,7 @@ header .intro-text .intro-heading {
   }
   header .intro-text .intro-heading {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
+    text-transform: none;
     font-weight: 700;
     font-size: 75px;
     line-height: 75px;
@@ -303,7 +303,7 @@ section h3.section-subheading {
   text-transform: none;
   font-style: italic;
   font-weight: 400;
-  margin-bottom: 75px;
+  margin-bottom: 20px;
 }
 @media (min-width: 768px) {
   section {
@@ -376,6 +376,7 @@ section h3.section-subheading {
 }
 #portfolio .portfolio-item .portfolio-caption {
   max-width: 400px;
+  height: 100%;
   margin: 0 auto;
   background-color: white;
   text-align: center;
@@ -410,14 +411,14 @@ section h3.section-subheading {
   position: absolute;
   content: "";
   width: 2px;
-  background-color: #f1f1f1;
+  background-color: #777777;
   left: 40px;
   margin-left: -1.5px;
 }
 .timeline > li {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   position: relative;
-  min-height: 50px;
+  min-height: 30px;
 }
 .timeline > li:before,
 .timeline > li:after {
@@ -453,10 +454,10 @@ section h3.section-subheading {
   height: 100px;
   position: absolute;
   z-index: 100;
-  background-color: #e52b50;
+  background-color: #777777;
   color: white;
   border-radius: 100%;
-  border: 7px solid #f1f1f1;
+  border: 2px solid #777777;
   text-align: center;
 }
 .timeline > li .timeline-image h4 {
@@ -482,7 +483,8 @@ section h3.section-subheading {
   right: auto;
 }
 .timeline > li:last-child {
-  margin-bottom: 0;
+  padding: 50px 0 0 0;
+  margin-bottom: 10px;
 }
 .timeline .timeline-heading h4 {
   margin-top: 0;
@@ -500,13 +502,13 @@ section h3.section-subheading {
     left: 50%;
   }
   .timeline > li {
-    margin-bottom: 100px;
-    min-height: 100px;
+    margin-bottom: 20px;
+    min-height: 50px;
   }
   .timeline > li .timeline-panel {
     width: 41%;
     float: left;
-    padding: 0 50px 20px 30px;
+    padding: 0 50px 20px 20px;
     text-align: right;
   }
   .timeline > li .timeline-image {
@@ -523,20 +525,24 @@ section h3.section-subheading {
   .timeline > li.timeline-inverted > .timeline-panel {
     float: right;
     text-align: left;
-    padding: 0 30px 20px 50px;
+    padding: 0 20px 20px 50px;
+  }
+  .timeline > li:last-child {
+    padding: 50px 0 0 0;
+    margin-bottom: 100px;
   }
 }
 @media (min-width: 992px) {
   .timeline > li {
-    min-height: 150px;
+    min-height: 100px;
   }
   .timeline > li .timeline-panel {
-    padding: 0 70px 20px;
+    padding: 0 50px 20px 20px;
   }
   .timeline > li .timeline-image {
-    width: 250px;
-    height: 250px;
-    margin-left: -125px;
+    width: 200px;
+    height: 200px;
+    margin-left: -100px;
   }
   .timeline > li .timeline-image h4 {
     font-size: 18px;
@@ -544,20 +550,20 @@ section h3.section-subheading {
     line-height: 26px;
   }
   .timeline > li.timeline-inverted > .timeline-panel {
-    padding: 0 20px 20px 70px;
+    padding: 0 20px 20px 50px;
   }
 }
 @media (min-width: 1200px) {
   .timeline > li {
-    min-height: 170px;
+    min-height: 150px;
   }
   .timeline > li .timeline-panel {
     padding: 0 20px 20px 100px;
   }
   .timeline > li .timeline-image {
-    width: 170px;
-    height: 170px;
-    margin-left: -85px;
+    width: 200px;
+    height: 200px;
+    margin-left: -100px;
   }
   .timeline > li .timeline-image h4 {
     margin-top: 40px;
@@ -568,12 +574,12 @@ section h3.section-subheading {
 }
 .team-member {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .team-member img {
   margin: 0 auto;
-  max-width: 300px;
-  border: 7px solid white;
+  max-width: 250px;
+  border: 3px solid #777777;
 }
 .team-member h4 {
   margin-top: 25px;
@@ -614,27 +620,27 @@ section#contact .form-control:focus {
 }
 section#contact ::-webkit-input-placeholder {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: 700;
   color: #eeeeee;
 }
 section#contact :-moz-placeholder {
   /* Firefox 18- */
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: 700;
   color: #eeeeee;
 }
 section#contact ::-moz-placeholder {
   /* Firefox 19+ */
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: 700;
   color: #eeeeee;
 }
 section#contact :-ms-input-placeholder {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: 700;
   color: #eeeeee;
 }
@@ -648,14 +654,12 @@ footer {
 footer span.copyright {
   line-height: 40px;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
   text-transform: none;
 }
 footer ul.quicklinks {
   margin-bottom: 0;
   line-height: 40px;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
   text-transform: none;
 }
 ul.social-buttons {
@@ -722,6 +726,8 @@ ul.social-buttons li a:active {
 }
 .portfolio-modal .modal-content img {
   margin-bottom: 30px;
+  max-width: 800px;
+  max-height: 800px;
 }
 .portfolio-modal .close-modal {
   position: absolute;
